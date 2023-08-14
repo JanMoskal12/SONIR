@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Sonir</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="icon" href="IconOfficial.ico" sizes="256x144">
+    <link rel="stylesheet" href="GalleryStyle.css">
+    
+</head> 
+ 
+<body>
+
+    <div class="sidebar">
+        <div class="content-wrapper">
+            <div>
+
+                <h1> Wszystkie osoby pragnące pomóc członkom stowarzyszenia SONIR
+                    prosimy o wpłate darowizny na konto bakowe. </h1>
+                
+                <h2>Numer konta bankowego</h2>
+                <h3>39203000451110000002780490</h3>
+            
+            </div>
+        </div>
+     </div>
+
+     <script>
+        let sidebar = document.getElementsByClassName('sidebar')[0];
+        let sidebar_content = document.getElementsByClassName("content-wrapper")[0];
+
+        window.onscroll = () =>
+        {
+            let scrollTop = window.scrollY;
+            let viewportHeight = window.innerHeight;
+            let contentHeight = sidebar_content.getBoundingClientRect().height;
+
+            if (scrollTop >= contentHeight - viewportHeight)
+            {
+                sidebar_content.style.transform = 'translateY(-${contentHeight - viewportHeight}px)';
+                sidebar_content.style.position = "fixed";
+            }
+            else
+            {   
+                sidebar_content.style.transform = "";
+                sidebar_content.style.position = "";
+            }
+        }
+     </script>
+    
+
+  <div id="Container">
+
+  
+
+
+   
+    
+
+     <header class="headerLogo">
+
+        <div class="image-container">
+            <img src="bg_header.png" alt="Logo">
+        </div>
+
+     </header>
+
+     <div class="nav">
+
+        <div class="toolBar">
+            <a href="index.html"> <span> <i>Strona Główna</i> </span></a>
+            
+            <a href="Contact.html"> <span> <i>Kontakt i zarząd</i> </span></a>
+            <a href="Gallery.html"> <span> <i>Galeria</i> </span></a>
+            <a href="Stat.html"> <span> <i>Statut</i> </span></a>
+    
+    
+         </div>
+         
+
+     </div>
+
+     <div class="main">
+
+        <div class="main-ContentBlock">
+
+            <a href="TurniejSlowian.html">
+
+                <img src="Folder.png" alt="xd">
+                <h3>Turniej słowian...</h3>
+
+            </a>
+
+            
+            <a href="SpotkanieIntegracyjne.html">
+
+                <img src="Folder.png" alt="xd">
+                <h3>Spotkanie integracyjne...</h3>
+
+            </a>
+
+            
+            <a href="Wycieczka.html">
+
+                <img src="Folder.png" alt="xd">
+                <h3>Wycieczka integracyjna...</h3>
+
+            </a>
+
+            
+           
+
+           
+                                      
+        </div>
+
+       
+
+        
+        
+
+     </div>
+
+    
+
+
+    
+
+    
+    
+
+
+
+   
+
+
+     <footer>
+   
+       
+     </footer>
+
+  </div>
+
+ 
+
+</body>
+
+</html>
